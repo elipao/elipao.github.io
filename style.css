@@ -65,4 +65,59 @@ h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 20px;
-    color: #
+    color: #5D4037; /* Brown */
+}
+
+#projects .project-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    margin: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #285027; /* Green */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #285027; /* Green */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    color: #5D4037; /* Brown */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #projects .project {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
