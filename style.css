@@ -57,7 +57,7 @@ section {
     color: #626762; 
 }
 
-#about, #projects, #contact {
+#about, #projects, #contact, #experience {
     padding: 100px 20px;
     background-color: white;
     margin-bottom: 50px;
@@ -76,6 +76,16 @@ h2 {
     flex-wrap: wrap;
 }
 
+.experience {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E8E8E8;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
 .project {
     background-color: #E8E8E8;
     padding: 20px;
@@ -90,7 +100,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    
 }
 
 .social-links a {
