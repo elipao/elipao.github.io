@@ -77,13 +77,15 @@ h2 {
 }
 
 .experience {
-    display: flex;
+    display: flex; 
+    flex-direction: column; /* Stack items vertically */
     justify-content: center;
-    flex-wrap: wrap;
-    background-color: #8e8e8e;
+    align-items: center; /* Center align content */
+    background-color: #b7b7b7;
     padding: 20px;
     border-radius: 5px;
     margin: 15px;
+    width: 60%; 
 }
 
 .project {
@@ -127,6 +129,10 @@ html {
 @media (max-width: 768px) {
     #projects .project {
         width: 90%;
+    }
+
+    .experience {
+        width: 90% 
     }
 
     nav ul {
