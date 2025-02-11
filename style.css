@@ -1,13 +1,15 @@
 :root {
     --accent-green: #62d868;
-
+    --light-grey: #b7c2b77d;
+    --light-blue:  #dffcff; 
+    --accent-blue: #1f79d3;
 }
 
+/* overriding strong */
 strong {
     font-weight: 400 !important;
     color: var(--accent-green);
 }
-
 
 /* General Styling */
 * {
@@ -25,7 +27,7 @@ body {
 
 header {
     font-weight: 200 !important; 
-    background-color: #b7c2b77d; /* Green */
+    background-color: var(--light-grey); 
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -50,10 +52,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(227, 206, 206);
+    color:  var(--accent-blue);
     transition: 0.3s;
     text-decoration: none;
-    font-weight: 100;
+    font-weight: 300;
+    
 }
 
 section {
@@ -115,15 +118,15 @@ video {
     margin-left: 2rem; 
     margin-right: 2rem; 
     font-size: 25px;
-    color: #626762;  /* Brown */
+    color: #626762; 
 }
 
 section h2 {
     text-align: center;
     font-size: 2.2em;
     padding: 15px;
-    position: relative; /* Needed for absolute positioning of the underline */
-    color: #626762; /* Brown */
+    position: relative; 
+    color: #626762; 
 }
 
 section h2::after {
@@ -131,7 +134,7 @@ section h2::after {
     margin-bottom: 15px;
     position: absolute;
     left: 50%;
-    bottom: -10px; /* Adjust spacing below text */
+    bottom: -10px; 
     transform: translateX(-50%);
     display: block;
     width: 0%; /* Start hidden */
@@ -141,7 +144,7 @@ section h2::after {
 }
 
 section h2.visible::after {
-    width: 40%; /* Expands underline when visible */
+    width: 40%;
 }
 
 
@@ -152,25 +155,12 @@ section h2.visible::after {
     flex-wrap: wrap;
 }
 
-.experience {
-    display: flex; 
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center;
-    align-items: center; /* Center align content */
-    background-color: #b7b7b7;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 15px;
-    width: 60%; 
-}
-
-
 .tile{
     padding: 20px;
     width: 45%;
     margin: 15px;
     border-radius: 10px;
-    background-color: #dffcff;
+    background-color: var(--light-blue);
     border: 2px solid var(--accent-green); /* Default border */
     padding: 20px;
     transition: all 0.3s ease-in-out; /* Smooth transition */
@@ -183,8 +173,9 @@ section h2.visible::after {
 
 
 footer {
-    background-color: #060706; /* Green */
-    color: white;
+    background-color: var(--light-grey); /* Green */
+    color: black;
+    font-weight: 500 !important; 
     text-align: center;
     padding: 10px 0;
 }
