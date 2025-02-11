@@ -2,13 +2,13 @@
     --accent-green: #62d868;
     --light-grey: #b7c2b77d;
     --light-blue:  #dffcff; 
-    --accent-blue: #1f79d3;
+    --accent-blue: #298ef4;
 }
 
 /* overriding strong */
 strong {
     font-weight: 400 !important;
-    color: var(--accent-green);
+    color: var(--accent-blue);
 }
 
 /* General Styling */
@@ -119,6 +119,7 @@ video {
     margin-right: 2rem; 
     font-size: 25px;
     color: #626762; 
+    margin-top: 30px; 
 }
 
 section h2 {
@@ -149,7 +150,7 @@ section h2.visible::after {
 
 
 
-#projects .project-grid {
+#projects .project-grid, #experience .project-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -179,6 +180,11 @@ footer {
     font-weight: 500 !important; 
     text-align: center;
     padding: 10px 0;
+}
+
+
+.social-links {
+    margin-top: 30px; 
 }
 
 .social-links a {
