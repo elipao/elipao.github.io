@@ -1,7 +1,7 @@
 :root {
     --accent-green: #62d868;
     --light-grey: #b7c2b77d;
-    --light-blue:  #dffcff; 
+    --light-blue:  #dffcffad; 
     --accent-blue: #298ef4;
 }
 
@@ -265,3 +265,5 @@ html {
     
 
 }
+
+
