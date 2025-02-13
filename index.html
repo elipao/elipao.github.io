@@ -16,9 +16,17 @@
                 <li class="header-links"><a href="#about">About</a></li>
                 <li class="header-links"><a href="#experience">Experience</a></li>
                 <li class="header-links"><a href="#projects">Projects</a></li>
-                <li class="header-links"><a href="#contact">Contact</a></li>
+                <li class="header-links"><a href="#connect">Connect</a></li>
             </ul>
+
+            
         </nav>
+
+        <a href="#connect" class="card">
+            Connect
+        </a>
+
+
     </header> 
 
     <section id="intro">
@@ -37,9 +45,9 @@
         <p class="blurb">
            Hi, I'm Liz - an aspiring software engineer with a passion for <strong>fullstack</strong> and <strong>machine learning</strong>!
            <br> <br> 
-           I will be <strong> graduating in May 2025 </strong> from Pennstate University with a Bachelors in Computer Science, so I'm searching for <strong> full-time entry level software engineer positions </strong>. 
+           I will be <strong> graduating in May 2025 </strong> from Pennstate University with a Bachelors in Computer Science, so I'm searching for a <strong> full-time software engineer role </strong>. 
            <br> <br> 
-           Creating innovative software that can impact others is my passion, and I'm always looking for new opportunities to learn and grow.
+           Creating innovative software that can impact others is my passion, and I'm always looking for new opportunities to learn and grow. 🌱
 
         </p>
     </section>
@@ -109,19 +117,46 @@
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
+    <section id="connect">
+        <h2>Connect</h2>
+
+        <div class="two-col-container"> 
+            <div class="contact-links">
+                <ul>
+                    <li>
+                        Github 
+                    </li>
+                    <li>
+                        LinkedIn
+                    </li>
+                    <li>
+                        Email 
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm" action="send_email.php" method="post">
+                    <h2>Contact Me</h2>
+        
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <!-- Checkbox for resume attachment -->
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="resumeCheckbox" name="resume">
+                        <label for="resumeCheckbox">Would you like my resume attached?</label>
+                    </div>
+        
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
-    </section>
-
-
-    <section id = "email">
-        <h2>
-            Email Me
-        </h2>
-        <a href="mailto:liz.k.pao@gmail.com" target="_blank">
-            email
-        </a>
     </section>
 
     <footer>
