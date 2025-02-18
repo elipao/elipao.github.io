@@ -33,16 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Check if there's a success or error parameter in the URL
-    const params = new URLSearchParams(window.location.search);
-    if (params.has("success")) {
-        alert("Your message has been sent successfully!");
-    } else if (params.has("error")) {
-        alert("There was an error sending your message. Please try again.");
-    }
-});
-
 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
