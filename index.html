@@ -103,16 +103,19 @@
             <div class="tile">
                 <h3>Project 2</h3>
                 <p>A brief description of your project.</p>
+                <a href="">Link to github</a>
             </div>
  
             <div class="tile">
                 <h3>Project 3</h3>
                 <p>A brief description of your project.</p>
+                <a href="">Link to github</a>
             </div>
 
             <div class="tile">
                 <h3>Project 4</h3>
                 <p>A brief description of your project.</p>
+                <a href="">Link to github</a>
             </div>
         </div>
     </section>
@@ -135,11 +138,23 @@
                 </ul>
             </div>
             <div class="contact-form">
+
                 <form action="f2e4d5f569d6f7fdbb76079f51bc359c" method="POST">
-                    <input type="text" name="name" required placeholder="your name">
+                    
                     <input type="email" name="email" required placeholder="your email address">
+                    <input type="text" name="name" required placeholder="your name">
+                    <input type="text" name="message" required placeholder="your message">
+                    <div class="checkbox-container"> <!-- For the love of god stop with the containers -->
+                        <input type="checkbox" id="request_resume" name="request_resume">
+                        <label for="request_resume">Request resume</label>
+                    </div>
+                    
                     <button type="submit">Send</button>
                </form>
+
+               <div id = "successMessage" class="hidden">
+                    Message sent! Should respond within 1-2 business days.
+               </div>
 
         
             </div>
