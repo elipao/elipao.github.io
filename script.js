@@ -45,8 +45,13 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     message.classList.remove("hidden");
     message.classList.add("show");
 
+
+    /*
+
     // Hide message after 3 seconds
     setTimeout(() => {
         message.classList.remove("show");
     }, 3000);
+
+    */ 
 });
