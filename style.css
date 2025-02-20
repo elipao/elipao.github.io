@@ -19,6 +19,12 @@ strong {
     box-sizing: border-box;
 }
 
+#heads-up {
+    margin-top: 3.5rem; 
+    color: red; 
+    font-weight: 500; 
+}
+
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -397,6 +403,12 @@ html {
 
 /* Media Queries */
 @media (max-width: 800px) {
+
+    #heads-up {
+        margin-top: 10rem; 
+    }
+
+
     .tile {
         width: 100%;
     }
