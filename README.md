@@ -1,1 +1,1 @@
-this is a portfolio website - currently it is being updated everyday. 
+this is a portfolio website - under maintenance.
