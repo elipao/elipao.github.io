@@ -112,6 +112,11 @@ nav svg {
 
 
 @media (max-width: 768px) {
+
+    .card {
+        padding: 0.6rem;
+        margin: 0.5rem !important; 
+    }
     header {
         top: 0.5rem;
         left: 0.5rem;
@@ -127,38 +132,44 @@ nav svg {
     }
 
     #me_gif img {
-        min-width: 0 !important;    /* remove min-width */
-        min-height: 0 !important;   /* remove min-height */
-        flex-shrink: 1 !important;  /* allow shrinking */
-        width: 50% !important;      /* force width */
+        min-width: 0 !important;   
+        min-height: 0 !important;   
+        flex-shrink: 1 !important;  
+        width: 50% !important;     
         height: auto !important;
-        max-width: 100% !important; /* ensure max width */
+        max-width: 100% !important; 
         max-height: none !important;
-        transform: none !important; /* disable any scaling */
-        animation: float 3s ease-in-out infinite; /* keep animation */
-        display: block;             /* avoid inline quirks */
+        transform: none !important; 
+        animation: float 3s ease-in-out infinite;
+        display: block;           
     }
 
 
     #welcome-text {
-        max-width: 20vh;
-        max-height: 20vh; 
-        font-size: 0.8rem !important; 
+        margin: 0; 
+
+        font-size: 1rem !important; 
     }
     
     #center-nav a,
     #right-nav a {
-        font-size: 0.875rem;
+        font-size: 1.3rem;
         margin: 0 6px;
     }
-    
-    /* Hide text, keep icons */
-    #center-nav a:not(:first-child) {
-        font-size: 0.75rem;
-    }
+
 
     #intro h3 {
-        margin-top: 3rem;
+        margin-top: 3rem !important;
+    }
+
+    section {
+        margin: 0.5rem !important; 
+        padding: 0.5rem; 
+    }
+
+
+    .card-content {
+        font-size: 2rem !important; 
     }
 
 }
@@ -172,6 +183,7 @@ nav svg {
         color: white;
         font-size: 1.2rem;
         cursor: pointer;
+        font-weight: 100;
     }
     
     nav {
@@ -196,6 +208,10 @@ nav svg {
     #right-nav ul {
         flex-direction: column;
         gap: 1rem;
+    }
+
+    section {
+        margin: 0.2rem; 
     }
 }
 
@@ -695,7 +711,7 @@ h5 {
     color: rgb(255, 255, 255); 
     line-height: 1.2rem;
     font-weight: 200; 
-    margin: 3rem; 
+    margin: 4rem; 
 }
 
 #about-me h3 {
@@ -704,13 +720,14 @@ h5 {
 }
 
 
-@media (max-width: 868px) {
+@media (max-width: 1200px) {
     #about-content {
         font-size: 1.2rem; 
  
         width: auto; 
         height: auto; 
-        margin: 0.5rem; 
+        margin: 0rem !important; 
+        padding: 0rem; 
     }
 
     .row img{
