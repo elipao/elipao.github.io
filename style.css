@@ -3,11 +3,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: radial-gradient(circle, #5484b4, #b5b9bb);
+  
+  background: radial-gradient(circle, #1f2b37, rgb(84, 87, 93)); 
   background-attachment: fixed;
 }
 /*
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background: radial-gradient(circle, #2c3e50, #bdc3c7);
 background: linear-gradient(145deg, #c8dcf1, #242f47);
 background: radial-gradient(circle at center, #a1c4fd 0%, #c2e9fb 40%, #243b55 100%);
@@ -87,7 +87,7 @@ nav {
     margin: 0 15px;
     color: black;
     text-decoration: none;
-    font-weight: 200;
+    font-weight: 400;
     transition: color 0.3s;
 }
 
@@ -200,29 +200,43 @@ nav svg {
 }
 
 #welcome-text {
-   color: rgb(214, 214, 214); 
+   color: rgba(255, 255, 255, 0.9); 
    font-size: 18px; 
    font-family: 'Courier New', Courier, monospace;
    max-width: 30vmax;
    max-height: 45vmax; 
    
-   /* Enhanced styling */
-   border: 2px solid rgb(124, 140, 146); 
+   /* Glassmorphism styling */
+   border: 1px solid rgba(255, 255, 255, 0.2);
    padding: 1.5rem;
-   border-radius: 8px;
-   background: rgba(145, 163, 180, 0.178);
-   backdrop-filter: blur(10px);
-   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+   border-radius: 16px;
+   background: rgba(255, 255, 255, 0.08);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+   box-shadow: 
+       0 8px 32px rgba(0, 0, 0, 0.1),
+       inset 0 1px 0 rgba(255, 255, 255, 0.15);
    line-height: 1.6;
    
-   /* Subtle glow effect */
-   border-color: rgba(75, 123, 185, 0.425);
-   box-shadow: 
-       0 4px 15px rgba(226, 93, 220, 0.2),
-       inset 0 1px 0 rgba(61, 47, 47, 0.486);
+   transition: all 0.3s ease;
    
    opacity: 0;
    animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+#welcome-text:hover {
+   background: rgba(255, 255, 255, 0.12);
+   border-color: rgba(255, 255, 255, 0.3);
+   transform: translateY(-2px);
+   box-shadow: 
+       0 12px 40px rgba(0, 0, 0, 0.15),
+       inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+@keyframes fadeIn {
+   to {
+       opacity: 1;
+   }
 }
 
 #socials {
@@ -252,13 +266,13 @@ nav svg {
 }
 
 #me_gif a{
-    color: rgb(209, 70, 209);
+    color: rgb(138, 239, 255);
     text-decoration: none;
     transition: color 0.3s ease-in;
 }
 
 #me_gif a:hover {
-    color: rgb(255, 255, 255);
+    color: rgb(48, 144, 195);
 }
 
 
@@ -311,8 +325,9 @@ nav svg {
 }
 
 span #orange{
-    color: rgb(173, 96, 218);
+    color: rgb(121, 240, 248);
     font-weight: 400; 
+    text-shadow: 2px 5px 5px rgba(138, 218, 218, 0.503);
 }
 
 #intro h3 {
@@ -359,7 +374,6 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Convert your tech stack list items to bubble-like appearance */
 #tech-stack ul {
     display: flex;
     flex-wrap: wrap;
@@ -372,11 +386,8 @@ section {
 #tech-stack ul li {
     background: linear-gradient(45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
     color: white;
-    /* Responsive padding */
     padding: clamp(4px, 1vw, 8px) clamp(8px, 1.5vw, 12px);
-    /* Responsive border radius */
     border-radius: clamp(12px, 2vw, 18px);
-    /* Responsive font size */
     font-size: clamp(0.65rem, 1.5vw, 0.8rem) !important;
     font-weight: 500 !important;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -388,7 +399,7 @@ section {
 }
 
 #tech-stack ul li:hover {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.459), rgba(78, 175, 231, 0.253));
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.533), rgba(103, 183, 230, 0.784));
     transform: translateY(-1px) scale(1.03);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
@@ -483,8 +494,9 @@ section {
 }
 
 .card.expand h5 {
-    color: rgb(245, 164, 241); 
+    color: rgb(121, 240, 248);
     font-weight: 400; 
+    text-shadow: 2px 5px 5px rgba(138, 218, 218, 0.503);
 }
 
 
@@ -511,8 +523,8 @@ section {
   align-items: center;
   justify-content: center;
   gap: 0.3rem; /* spacing between text and icon */
-  color: #f1d7f0;
-  font-size: 0.9rem;
+  color: #6df0eb;
+  font-size: 0.8rem;
   font-weight: 400;
   margin-top: 1rem;
   transition: opacity 0.5s ease;
@@ -599,7 +611,9 @@ h5 {
     height: 20px; /* Match SVG height */
     margin: 0 auto; /* Center the container */
     font-size: 18px;
-    color: #1f5261;
+
+    color: rgb(121, 240, 248);
+ 
     transition: all 0.3s ease;
     animation: bounce 2s infinite;
 }
@@ -717,8 +731,9 @@ h5 {
 
 
 footer {
-    background-color: #b9d5e4;
+    background-color: #b9d5e474;
     color: black; 
+
     display: flex;
     flex-direction: column;
     justify-content: center;
