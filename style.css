@@ -695,7 +695,7 @@ h5 {
     color: rgb(255, 255, 255); 
     line-height: 1.2rem;
     font-weight: 200; 
-    width: 90vh; 
+    margin: 3rem; 
 }
 
 #about-me h3 {
@@ -707,9 +707,10 @@ h5 {
 @media (max-width: 868px) {
     #about-content {
         font-size: 1.2rem; 
-        max-width: 70vh; 
+ 
         width: auto; 
         height: auto; 
+        margin: 0.5rem; 
     }
 
     .row img{
@@ -737,7 +738,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 8vh; 
+
     text-align: center;
     align-items: center;
     padding: 2rem; 
