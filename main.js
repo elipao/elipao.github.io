@@ -120,4 +120,28 @@ cards.forEach(card => {
   });
 });
 
+// Hamburger menu functionality for mobile nav
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('header nav');
+
+if (navToggle && nav) {
+  // Show the button only on mobile
+  function handleResize() {
+    if (window.innerWidth <= 480) {
+      navToggle.style.display = 'block';
+    } else {
+      navToggle.style.display = 'none';
+      nav.classList.remove('active');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  }
+  window.addEventListener('resize', handleResize);
+  handleResize();
+
+  navToggle.addEventListener('click', function() {
+    const isActive = nav.classList.toggle('active');
+    navToggle.setAttribute('aria-expanded', isActive ? 'true' : 'false');
+  });
+}
+
 
