@@ -1,3 +1,12 @@
+* {
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/ 
+    font-family:monospace;
+    line-height: 1.6; 
+    font-weight: 300; 
+    cursor: none !important;
+}
+
+
 
 html, body {
   margin: 0;
@@ -13,12 +22,6 @@ background: linear-gradient(145deg, #c8dcf1, #242f47);
 background: radial-gradient(circle at center, #a1c4fd 0%, #c2e9fb 40%, #243b55 100%);
 */
 
-* {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6; 
-    font-weight: 300; 
-    cursor: none !important;
-}
 
 .trail-dot {
   position: fixed;
@@ -83,7 +86,7 @@ nav {
 #center-nav a,
 #right-nav a {
     opacity: 1 !important;
-    font-size: 1rem;
+    font-size: 1.4rem;
     margin: 0 15px;
     color: black;
     text-decoration: none;
@@ -176,6 +179,11 @@ nav svg {
 
 @media (max-width: 480px) {
     
+    nav a {
+        font-size: 15px; 
+        font-weight: 200; 
+    }
+
     #center-nav ul,
     #right-nav ul {
         flex-direction: column;
@@ -342,7 +350,7 @@ section {
 
 .card {
     transition: transform 1s ease, box-shadow 0.3s ease, height 0.5s ease;
-    padding: 0.6rem;
+    padding: 0.8rem;
     margin: 2rem; 
     border: 1px solid #ccc;
     border-radius: 12px; 
