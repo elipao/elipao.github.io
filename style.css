@@ -25,9 +25,9 @@ background: radial-gradient(circle at center, #a1c4fd 0%, #c2e9fb 40%, #243b55 1
 
 .trail-dot {
   position: fixed;
-  width: 12px;
-  height: 12px;
-  background: rgba(177, 231, 238, 0.185);
+  width: 14px;
+  height: 14px;
+  background: rgba(177, 211, 238, 0.185);
   border: 1px solid rgba(37, 22, 22, 0.3);
   border-radius: 8px; 
   pointer-events: all;
@@ -700,7 +700,7 @@ h5 {
 }
 
 
-#about-me li::marker {
+li::marker {
 
   color: #7adde0; 
 
