@@ -716,6 +716,15 @@ h5 {
     margin: 4rem; 
 }
 
+
+#about-me li::marker {
+
+  color: #7adde0; 
+
+}
+
+
+
 #about-me h3 {
     margin: 0; 
 
